@@ -1,0 +1,1 @@
+select distinct Annotation.metabolism from Annotation cross join Annotation as b where Annotation.gene != b.gene AND Annotation.metabolism=b.metabolism 
