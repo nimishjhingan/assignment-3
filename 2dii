@@ -1,0 +1,1 @@
+SELECT memberid,firstname,lastname FROM Member WHERE memberid IN (select memberid from Entry group by memberid HAVING COUNT(DISTINCT YEAR) = (SELECT COUNT(DISTINCT YEAR) FROM Entry) )
