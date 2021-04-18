@@ -1,0 +1,1 @@
+metabolism Annotation ∩ πX.metabolism σ Annotation.gene≠X.gene ∧ Annotation.metabolism=X.metabolism (Annotation ⨯ (ρ X (Annotation)))
