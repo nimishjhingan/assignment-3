@@ -1,0 +1,1 @@
+SELECT Member.MemberID,Member.LastName,Member.firstname from Member where Member.memberid in (SELECT distinct MemberID FROM Entry where memberid not in (  SELECT DISTINCT memberid FROM Entry WHERE year='2013'));
